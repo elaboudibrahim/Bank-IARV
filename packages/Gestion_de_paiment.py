@@ -14,5 +14,4 @@ def afficher_facture(ref):
             facture=i.split("**")
             print(str(j+1) + ")-- type de facture :  " + facture[0] + " montant "  + facture[1] + "\n")
     except:
-            print("fin----------------------------------------------------------")
-
+            print("fin-----------------------------------------------------------")
