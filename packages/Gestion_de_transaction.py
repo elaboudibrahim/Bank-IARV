@@ -1,6 +1,12 @@
 from . import Assistant
 
 
+def afficherSolde(nf):
+    file=open("files/users/"+nf+".txt",'r')
+    info=file.readline()
+    solde=info.split("**")
+    print("vote solde  : "+ str(solde[1]))
+    file.close()
 
 def transfereArgent(ref):
     ref2=input("entrez le reference du compte que vous voulez transferer l'argent \n")
