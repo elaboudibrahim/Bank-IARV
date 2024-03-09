@@ -1,9 +1,9 @@
 
 def creerCompte():
     f=open("files/creerCompte.txt",'a')
-    Name=input("entrez votre nom \n")
-    password=input("entrez votre password \n")
-    email=input("entrez votre email \n")
+    Name=input(    "\t\t\t\t* entrez votre nom       * \n")
+    password=input("\t\t\t\t* entrez votre password  * \n")
+    email=input(   "\t\t\t\t* entrez votre email     * \n")
     f.write(Name + '**' + password + '**' + email +"**USER"+ '\n')
     f2=open("files/users/"+Name+email+".txt",'w')
     f2.write("Solde :**" + '0.0')
@@ -11,14 +11,14 @@ def creerCompte():
     f.close()
 def connexion():
     f = open("files/creerCompte.txt", "r")
-    email = input("entrez votre email \n")
-    password = input("entrez votre password \n")
+    email = input(   "\t\t\t\t* - entrez votre email    * \n")
+    password = input("\t\t\t\t* - entrez votre password * \n")
     datas = f.readlines()
     for data in datas:
         res=data.strip().split('**')
         if email == res[2] and password==res[1]:
                 return res[2]
-    return ""
+    return "f"
 
 
 # with open("zoo.txt", 'r') as filin:
