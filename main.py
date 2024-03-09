@@ -6,7 +6,8 @@ from packages import Gestion_de_compte
 from packages import Gestion_de_compte_client
 from packages import Simulateur_d_credit
 
-
+print("\n\n\t\t\t Bienvenue dans BRAHIM-MOUATAZ BANK\n"
+      "\t\t\t      --(its 7alal no taxe)-- \n")
 choix=int(input("\t\t\t***********************************\n"
                 "\t\t\t *\tpour cree compte choisi  1   *\n"
                 "\t\t\t *\t\t\t\t\t\t\t\t *\n"
